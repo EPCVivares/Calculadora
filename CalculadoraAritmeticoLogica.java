@@ -1,7 +1,7 @@
 /*
- * CALCULADORA ARITMETICOLÓGICA
- * Fecha:
- * Autora
+ * CALCULADORA ARITMETICOLÃ“GICA
+ * Fecha: 24/11/2021
+ * Autora: Esmeralda Parra Cano
  */
 
 
@@ -23,11 +23,11 @@ public class CalculadoraAritmeticoLogica {
 
 	do
 	{
-	System.out.println("Menú de Calculadora");
+	System.out.println("MenÃº de Calculadora");
 	
 	System.out.println("Ingrese la accion a realizar: ");
-    System.out.println("1.- Calculos Aritméticos");
-    System.out.println("2.- Cálculos Lógicos");
+    System.out.println("1.- Calculos AritmÃ©ticos");
+    System.out.println("2.- CÃ¡lculos LÃ³gicos");
     System.out.println("3.- Salir");
     
      
@@ -37,17 +37,17 @@ public class CalculadoraAritmeticoLogica {
         switch(menu1) 
         	{
         	case 1: 
-        			System.out.println("Calculadora Aritmética");
-        			menuAritmetica(); //Entra en el menú
+        			System.out.println("Calculadora AritmÃ©tica");
+        			menuAritmetica(); //Entra en el menÃº
         			
-        			// Aquí hay que llamar al menú de la calculadora aritmética
+        			// AquÃ­ hay que llamar al menÃº de la calculadora aritmÃ©tica
         			break;
         			
         	case 2:		
-        			System.out.println("Calculadora Lógica");
+        			System.out.println("Calculadora LÃ³gica");
         			logica();
         			
-        			// Aquí llamamos a la calculadora lógica
+        			// AquÃ­ llamamos a la calculadora lÃ³gica
         			break;
         	
         	case 3:
@@ -66,18 +66,18 @@ public class CalculadoraAritmeticoLogica {
     	
 	}
 	
-public static void menuAritmetica() { //Menú de selección
+public static void menuAritmetica() { //MenÃº de selecciÃ³n
 		
 		boolean salir = false; //centinela para salir del programa
 		int seleccion;
 		
 		do {
-			System.out.println("Selecciona una opción");
+			System.out.println("Selecciona una opciÃ³n");
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar");
 			System.out.println("4. Dividir");
-			System.out.println("5. Apagar la calculadora aritmética");
+			System.out.println("5. Apagar la calculadora aritmÃ©tica");
 			
 			try {
 				seleccion= teclado.nextInt();
@@ -85,8 +85,8 @@ public static void menuAritmetica() { //Menú de selección
 				switch (seleccion)
 					{
 					case 1: 
-						pedirDatos(); //Llamada al método que nos solicita los datos
-						suma(numero1, numero2); //Llamada al método suma
+						pedirDatos(); //Llamada al mÃ©todo que nos solicita los datos
+						suma(numero1, numero2); //Llamada al mÃ©todo suma
 						break;
 					case 2: 
 						pedirDatos();
@@ -102,24 +102,24 @@ public static void menuAritmetica() { //Menú de selección
 						break;
 					case 5: 
 						salir=true;
-						System.out.println("Salir de la calculadora aritmética");
+						System.out.println("Salir de la calculadora aritmÃ©tica");
 						break;
 					}
 			
 				}
 			catch (InputMismatchException e) //salta cuando lo introducido es una letra y no se puede convertir a numero
          		{
-				System.out.println("Debes insertar un número, no una letra");
+				System.out.println("Debes insertar un nÃºmero, no una letra");
 				teclado.next();
          		}
 		}while (!salir);
 	}
 
-public static void pedirDatos() { //Pide los números que deseamos operar
+public static void pedirDatos() { //Pide los nÃºmeros que deseamos operar
 	
-	System.out.println("Introduzca un número por teclado");
+	System.out.println("Introduzca un nÃºmero por teclado");
 	numero1 = teclado.nextInt();
-	System.out.println("Introduzca otro número por teclado");
+	System.out.println("Introduzca otro nÃºmero por teclado");
 	numero2 = teclado.nextInt();
 }
 
@@ -155,12 +155,12 @@ public static void logica() {
 	int menu3;
 	boolean salir3=false;
 	do {
-		System.out.println("Selecciona una opción");
+		System.out.println("Selecciona una opciÃ³n");
 		System.out.println("1. AND");
 		System.out.println("2. OR");
 		System.out.println("3. NOT");
 		System.out.println("4. XOR");
-		System.out.println("5. Apagar la calculadora lógica");
+		System.out.println("5. Apagar la calculadora lÃ³gica");
 		
 		try {
 			menu3= teclado.nextInt();
@@ -185,14 +185,14 @@ public static void logica() {
 					break;
 				case 5: 
 					salir3=true;
-					System.out.println("Salir de la calculadora lógica");
+					System.out.println("Salir de la calculadora lÃ³gica");
 					break;
 				}
 		
 			}
 		catch (InputMismatchException e) //salta cuando lo introducido es una letra y no se puede convertir a numero
      		{
-			System.out.println("Debes insertar un número, no una letra");
+			System.out.println("Debes insertar un nÃºmero, no una letra");
 			teclado.next();
      		}
 	}while (!salir3);
@@ -206,7 +206,7 @@ public static void metodoAnd() {
     boolean a3 = y && x;
     boolean a4 = y && y;
 
-    System.out.println("Tabla de verdad de la conjunción");
+    System.out.println("Tabla de verdad de la conjunciÃ³n");
     System.out.println( x + " AND " + x + " = " + a1 );
     System.out.println( x + " AND " + y + " = " + a2 );
     System.out.println( y + " AND " + x + " = " + a3 );
@@ -220,7 +220,7 @@ public static void metodoOr() {
     boolean a3 = y || x;
     boolean a4 = y || y;
 
-    System.out.println("Tabla de verdad de la conjunción");
+    System.out.println("Tabla de verdad de la conjunciÃ³n");
     System.out.println( x + " OR " + x + " = " + a1 );
     System.out.println( x + " OR " + y + " = " + a2 );
     System.out.println( y + " OR " + x + " = " + a3 );
@@ -232,7 +232,7 @@ public static void metodoNot() {
     boolean a1 = !x;
     boolean a2 = !y;
 
-    System.out.println("Tabla de verdad de la conjunción");
+    System.out.println("Tabla de verdad de la conjunciÃ³n");
     System.out.println(" NOT " + x + " = " + a1 );
     System.out.println(" NOT " + y + " = " + a2 );
 
@@ -245,7 +245,7 @@ public static void metodoXor() {
     boolean a3 = y ^ x;
     boolean a4 = y ^ y;
 
-    System.out.println("Tabla de verdad de la conjunción");
+    System.out.println("Tabla de verdad de la conjunciÃ³n");
     System.out.println( x + " XOR " + x + " = " + a1 );
     System.out.println( x + " XOR " + y + " = " + a2 );
     System.out.println( y + " XOR " + x + " = " + a3 );
