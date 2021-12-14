@@ -1,7 +1,7 @@
 /*
  * CALCULADORA ARITMETICOLÓGICA
  * Fecha: 24/11/2021
- * Autora: Esmeralda Parra Cano
+ * Autora: Esmeralda Parra Cano, Cristofer, Daniel y José Antonio
  */
 
 
